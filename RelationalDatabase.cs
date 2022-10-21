@@ -231,7 +231,7 @@ namespace Lab4
             using var con = new NpgsqlConnection(connectionString);
             con.Open();
 
-            var sql = "SELECT * FROM \"entries\" limit 10;";
+            var sql = "SELECT * FROM \"entries\";";
 
             using var cmd = new NpgsqlCommand(sql, con);
 
